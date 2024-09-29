@@ -4,9 +4,9 @@ metadata:
   name: full-stack-app
   namespace: development
   annotations:
-    kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
 spec:
+  ingressClassName: nginx
   rules:
   - host: full-stack-app-dev
     http:
